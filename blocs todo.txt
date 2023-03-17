@@ -1,43 +1,42 @@
-done (preview 1):
-- search page
-- Bettermeower pfp support
-- statisics
-- txt file of bots
-- dont allow verified bot posts to be reported
-- image links showing as images?
+Do (example 1):
+- the search page
+- Better PFP support
+- Statistics
+- robot txt file
+- Block messages controlled by bots
+- Does the image link look like the image?
 
-done (preview 2):
-- enter user name and go to profile
-- crash bug fix (hopefully)
-- 10% finished mod panel
-- changelog
-- added "Badge" to Roblox888i for 200th chat (please dont beg for badges)
-- make so you dont have to log in for search bar and changelog
+Button (example 2):
+- You do not have a username and do not start as a profile
+- Bug fixes (hopefully)
+- 10% of the four modules are prepared
+- Edit Details
+- Added Roblox888 "penny" to 200 chats (badge not required)
+- Make sure you don't change the search
 
-done (preview 3):
-- sidebar transition
+complete (version 3);
+- Rotate the panel like this.
+Ready to play:
+- Disability status
+- Webhook (use a better partner)
 
-done for release:
-- banned status
-- webhooks (use showier branch)
+cst and tnix (or io) fix these errors:
+- General video issues
+- Navigation shortcuts
 
-cst and tnix (or me) please fix all these bugs:
-- image sizing issues
-- navbar links
-
-bettermeower:
-- img.bb image sharing (people need to generate their own api keys)
-- custom softcoded badges system (like bot system)
-- verified users?
-- make some sort of system for if the username matches another username with l or uppercase i
-- for image sharing, custom alt text
-- last online and go to last meower msg
-- custom pfp for bots
-- idk like mesage links
+Dear Meow:
+- Share img.bb images (API key generator)
+- General custom coding system (eg bot system)
+– Are users protected by authentication tokens?
+- System components are shared, for example, if a user has multiples or polyps with other users
+- Share photos, private texts
+- My last contact and last email address
+- For UN robots only
+- I don't know how to express my feelings.
 
 1.6 or beta 6:
-- log out everywhere
-- make alert that happens when using webhooks as guest
-- search users, posts and stuff
-- BGM
-- add to chat button on profiles (for adding users to gc via search)
+- to go somewhere
+- Comment as a guest using webhook
+- Search for users, messages and more
+- Movie score
+- Add chat button in profile (add user to copy search)
