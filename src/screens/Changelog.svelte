@@ -3,41 +3,38 @@
 </script>
 
 <Container>
-	<h1>Changelog</h1>
-	What's new?
+	<h1>check the disk</h1>
+	E
 </Container>
 <Container>
 	<h2>1.6</h2>
 	<ul>
-		<li>Changing your password now also logs you out of every device</li>
-		<li>Fixed misspelling error within Update Quote</li>
-		<li>Add https://forums.meower.org/ and https://nextcloud.meower.org/ to the image host whitelist</li>
+		<li>If you change your password now, we won't be able to access all your devices</li>
+		<li>Refreshed the ribbon</li>
+		<li>Add https://forums.meower.org/ and https://nextcloud.meower.org/ to the list of approved video providers.</li>
 	</ul>
 	</Container>
 <Container>
 	<h2>1.5.2</h2>
 	<ul>
-		<li>Fix the image host whitelist not working</li>
+		<li>Bad pictures are allowed</li>
 	</ul>
 </Container>
 <Container>
 	<h2>1.5.1</h2>
 	<ul>
-		<li>Fix the dango profile picture appearing twice when you have it selected</li>
+		<li>When I select my profile picture it seems to load twice</li>
 	</ul>
 </Container>
 <Container>
 	<h2>1.5</h2>
 	<ul>
 		<li>
-			Beta 4-style sidebar transition (except a bit less cooler due to the
-			logo not moving)
+			Change the style of beta 4 the signal does not move)
 		</li>
-		<li>Work-in-progress search page</li>
+		<li>full page search</li>
 		<li>
-			Images now show up in posts (like [title: https://url]). There is an
-			image host whitelist of a few sites (Meower, Tenor, Scratch,
-			cubeupload, Discord and imgBB)
+			The image is now visible in the file (name [name: https://url]). List of video servers supported by some websites (Meower, Tenor, Scratch, cubeupload, Discord and imgBB).
 		</li>
 		<li>
 			New profile pictures from the <a href="https://bettermeower.app"
