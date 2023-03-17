@@ -1,47 +1,45 @@
-# Contributing to Meower
+# it is owned by. recreation of the cat
 
-## Branch information
+## data storage
 
-The main branch where development takes place is `develop`. The `master` branch is what you see at https://app.meower.org, and is merged into for each release.
+The main sector where progress is being made is "development". It is a branch of Masu that you see at https://app.meower.org and is included in all versions.
 
-Branches are usually named like `username-branch`, where `username` is a short version of your username (like `cst`, `tnix`, et.), and `branch` is the branch name.
+Branches are often referred to as "branch username", where "username" is a shortened version of the username (eg "cst", "tnix", etc.) and "account" is the name of the branch.
 
-## Setting up your development environment
+## You are making great progress.
 
-Requirements:
+I ask you:
 
--   node.js and npm or some other package manager
--   git and some knowledge of it
--   Preferably understanding of JavaScript and node.js, among ~~us~~ other things
+- node.js and npm or other package managers
+- git and other information about it
+- Knowledge of JavaScript and node.js and ~~us~~ is essential
 
-To clone and run a development server on your machine (that autoupdates when you modify files):
+Close the installation server and install it on your computer (if you change the files, they will not be detected automatically):
 
-```
+``
 git clone https://github.com/meower-media-co/Meower-Svelte
 cd Meower-Svelte
-npm install
-npm run dev
-```
+practice examples
+NPM stimulates development
+``
 
-(Typically you usually also create a new branch for your work:)
+(Also create a new account for your company :)
 
-```
-git branch person-branch
-git checkout person-branch
-```
+`
+bone marrow donation
+To publish
+`
 
-For one-time building:
+after construction;
 
-```
-npm run build
-```
+``
+the original building
+``
 
-If your branch is online (not local), it will also be available in built form at `[branchname].meower-svelte.pages.dev`. A bot will post a comment about it when creating a PR.
+If your account is online (not local), it will be "[branch name].meower-svelte.pages.dev". You can create a blog and PR directly.
 
 ---
 
-Relevant bit of information from the original readme:
+From the original language:
 
-> ## Recommended IDE Setup
 >
-> [VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
