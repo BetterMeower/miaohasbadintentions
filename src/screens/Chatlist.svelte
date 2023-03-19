@@ -99,8 +99,8 @@
 		</div>
 	{:else}
 		<Container>
-			<h1>Chats</h1>
-			Here are your chats. Press the chat button to enter a chat.
+			<h1>SPEAK</h1>
+			This is your phone. Click the button to join the conversation.
 			<div class="settings-controls">
 				<button
 					class="circle plus"
@@ -127,8 +127,8 @@
 				/>
 			</div>
 
-			<h1>Livechat</h1>
-			This is the public livechat. Messages in this chat don't save.
+			<h1>to live more slowly</h1>
+			Living, that is, is cured. Messages are saved in this order.
 		</Container>
 		{#each chats as chat (chat._id)}
 			<div
@@ -185,15 +185,15 @@
 				toLeaveChat = false;
 			}}
 		>
-			<h2 slot="header">Leave Chat</h2>
+			<h2 slot="header">Close the conversation</h2>
 			<div slot="default">
-				<span>Are you sure you want to leave {$chatName}?</span>
+				<span>he is leaving. do you sure? {$chatName}?</span>
 				<br /><br />
 				<div class="modal-buttons">
 					<button
 						on:click={() => {
 							toLeaveChat = false;
-						}}>No</button
+						}}>NO</button
 					>
 					<button
 						on:click={() => {
@@ -206,7 +206,7 @@
 								},
 							});
 							toLeaveChat = false;
-						}}>Yes</button
+						}}>FIX</button
 					>
 				</div>
 			</div>
