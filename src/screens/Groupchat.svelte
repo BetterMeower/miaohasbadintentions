@@ -219,7 +219,7 @@
 		<div id="chat">
 			<Container>
 				<h1>{$chatName}</h1>
-				Chat ID: {$chatid}
+				Admin ID: {$chatid}
 				{#if $chatid !== "livechat"}
 					<div class="settings-controls">
 						<button
@@ -238,7 +238,7 @@
 					on:submit|preventDefault={e => {
 						postErrors = "";
 						if (!e.target[0].value.trim()) {
-							postErrors = "You cannot send an empty post!";
+							postErrors = "You can't send blank messages!";
 							return false;
 						}
 
@@ -270,7 +270,7 @@
 							} else if (
 								cmd.val === "E:106 | Too many requests"
 							) {
-								postErrors = "You're posting too fast!";
+								postErrors = "You write very fast!";
 							} else {
 								postErrors =
 									"Unexpected " + cmd.val + " error!";
@@ -282,7 +282,7 @@
 					<textarea
 						type="text"
 						class="white"
-						placeholder="Write something..."
+						placeholder="Writing something..."
 						id="postinput"
 						name="postinput"
 						autocomplete="false"
@@ -313,16 +313,16 @@
 						}}
 						bind:this={postInput}
 					/>
-					<button id="submitpost">Post</button>
+					<button id="submitpost">SNOW FEET</button>
 				</form>
 				<div class="post-errors">{postErrors}</div>
 			{/if}
 			<TypingIndicator />
 			{#if posts.length < 1}
 				{#if $user.name}
-					No posts here. Check back later or be the first to post!
+					There is no entry here. Come back later or write first!
 				{:else}
-					No posts here. Check back later!
+					How did you get into a group chat without being signed in?
 				{/if}
 			{:else}
 				{#each posts as post (post.id)}
@@ -342,7 +342,7 @@
 							class="load-more"
 							on:click={() => loadPage(pagesLoaded + 1)}
 						>
-							Load More
+							Download again
 						</button>
 					{/if}
 				</div>
@@ -385,7 +385,7 @@
 	{:catch error}
 		<Container>
 			<h1>{chatName}</h1>
-			Error loading posts. Please try again.
+			This message could not be sent. try again
 			<pre><code>{error}</code></pre>
 		</Container>
 	{/await}
