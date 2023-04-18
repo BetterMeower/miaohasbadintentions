@@ -100,9 +100,67 @@
 				}}
 			/>
 		</div>
+	{:else}
+		<Container>
+			<h1>SPEAK</h1>
+			This is your phone. Click the button to join the conversation.
+			<div class="settings-controls">
+				<button
+					class="circle plus"
+					on:click={() => {
+						modalPage.set("createChat");
+						modalShown.set(true);
+					}}
+				/>
+			</div>
+		</Container>
+		<Container>
+			<div class="settings-controls">
+				<button
+					class="circle join"
+					on:click={() => {
+						chatName.set("Livechat");
+						chatid.set("livechat");
+						chatMembers.set([]);
+						chatOwner.set("");
+						window.scrollTo(0, 0);
+						page.set("blank");
+						tick().then(() => page.set("groupchat"));
+					}}
+				/>
+			</div>
 
-		<h1>Livechat</h1>
-		Post history isn't saved here.
+			<h1>to live more slowly</h1>
+			Living, that is, is cured. Messages are saved in this order.
+		</Container>
+		{#each chats as chat (chat._id)}
+			<div
+				transition:fly|local={{y: -50, duration: 250}}
+				animate:flip={{duration: 250}}
+			>
+				<Container>
+					<div class="settings-controls">
+						<button
+							class="circle close"
+							on:click={() => {
+								chatName.set(chat.nickname);
+								chatid.set(chat._id);
+								toLeaveChat = true;
+							}}
+						/>
+						<button
+							class="circle join"
+							on:click={() => {
+								chatName.set(chat.nickname);
+								chatid.set(chat._id);
+								chatMembers.set(chat.members);
+								chatOwner.set(chat.owner);
+								window.scrollTo(0, 0);
+								page.set("blank");
+								tick().then(() => page.set("groupchat"));
+							}}
+						/>
+					</div>
 
 	</Container>
 	<PagedList bind:items {loadPage}>
@@ -155,15 +213,15 @@
 				toLeaveChat = false;
 			}}
 		>
-			<h2 slot="header">Leave Chat</h2>
+			<h2 slot="header">Close the conversation</h2>
 			<div slot="default">
-				<span>Are you sure you want to leave {$chatName}?</span>
+				<span>he is leaving. do you sure? {$chatName}?</span>
 				<br /><br />
 				<div class="modal-buttons">
 					<button
 						on:click={() => {
 							toLeaveChat = false;
-						}}>No</button
+						}}>NO</button
 					>
 					<button
 						on:click={() => {
@@ -176,7 +234,7 @@
 								},
 							});
 							toLeaveChat = false;
-						}}>Yes</button
+						}}>FIX</button
 					>
 				</div>
 			</div>

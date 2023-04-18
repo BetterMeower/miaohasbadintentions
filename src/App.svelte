@@ -71,29 +71,25 @@
 
 	{#if $disconnected}
 		<Modal>
-			<h2 slot="header">Me-owch.</h2>
+			<h2 slot="header">I hate</h2>
 			<div slot="default">
 				<p>
 					{#if $disconnectReason === ""}
-						Something went wrong and the connection to Meower was
-						lost.
+						Meower had a bug and crashed.
 					{:else if $disconnectReason === "Failed to load userdata"}
-						An unexpected error occurred while trying to load your
-						userdata! Check console for more information.
+						An unexpected error occurred while loading user data. See control panel for details.
 					{:else if $disconnectReason === "E:119 | IP Blocked"}
-						The server has blocked your IP address ({link.ip}).
+						Your IP address ({link.ip}) has been blocked by the server.
 					{:else if $disconnectReason == "E:110 | ID conflict"}
-						There has been a hiccup! Looks like you logged into
-						Meower from another device.
+						Hiccups! It appears that you have used Meower on another device.
 						<br /><br />
-						Please check any devices currently logged into Meower and
-						try again.
+						Check all devices registered to Meower and try again.
 					{:else if $disconnectReason == "E:018 | Account Banned"}
-						You have been banned by a moderator.
+						Your access has been denied by your system administrator.
 					{:else if $disconnectReason == "E:020 | Kicked"}
-						You have been kicked by a moderator.
+						My boss fired me.
 					{:else}
-						We ran into an error trying to connect to the server.
+						There was an error connecting to the server.
 						<pre><code>{$disconnectReason}</code></pre>
 					{/if}
 				</p>
@@ -103,7 +99,7 @@
 						disconnected.set(false);
 						await tick();
 						setupPage.set("reconnect");
-					}}>Reconnect</button
+					}}>back to school</button
 				>
 			</div>
 		</Modal>

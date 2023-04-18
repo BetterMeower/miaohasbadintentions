@@ -1,13 +1,16 @@
-# Meower Svelte
-The main Meower client, written in [Svelte](https://svelte.dev).
+# hello
 
-## Contributing
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+miao sveeeeeeeeee books
 
-## Contributors
-The Meower client is possible thanks to these ***amazing*** **people**!
+## It is allowed
+
+See [insert.md] (fut.md).
+
+## Business
+Meower users can connect with **these awesome people**!
 
 - @CST1229
+- @Blocaniaid
 - @tnix100
 - @Bloctans
 - @JoshAtticus
@@ -15,6 +18,8 @@ The Meower client is possible thanks to these ***amazing*** **people**!
 - @silvxrcat
 - @mdwalters
 - @williamhorning
-- @zedthehedgehog
+- @zedthedgehog
 - @ArrowAced
-- @theotherhades
+- @tithhadis
+- @showerdata9978
+- @Williamhorning
